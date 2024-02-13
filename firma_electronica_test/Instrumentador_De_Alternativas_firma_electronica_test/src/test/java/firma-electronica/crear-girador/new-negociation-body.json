@@ -1,0 +1,35 @@
+{
+  "documentNumber": 4655107,
+  "documentType": "Cedula de Extranjeria",
+  "mail": "mcoronad@bancolombia.com",
+  "caseNumber": "PRG_2023_1634455",
+  "solicitante": "Konecta",
+  "alternatives": [
+    {
+      "nameAlternative": "Consolidacion de Pasivos",
+      "dataDocument": [
+        {
+          "consolidatedNumber": 43882548,
+          "fileName": "Anexo-2548.pdf",
+          "fileSize": "150,4 KB",
+          "fileType": "anexo",
+          "plan": "ET2",
+          "concept": "Interes Corrientes",
+          "fechaCreacion": "2023-07-25T14:25:27Z",
+          "pagareValue": "100000000"
+        },
+        {
+          "consolidatedNumber": 43882548,
+          "fileName": "Seguro-2548.pdf",
+          "fileSize": "103,7 KB",
+          "fileType": "seguro",
+          "plan": "ET2",
+          "concept": "Capital",
+          "fechaCreacion": "2023-07-25T14:25:28Z",
+          "pagareValue": "100000000"
+        }
+      ]
+    }
+  ]
+
+}
