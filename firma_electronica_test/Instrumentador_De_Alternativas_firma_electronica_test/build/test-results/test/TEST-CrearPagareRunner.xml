@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CrearPagareRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-27T13:44:09" hostname="CHBOG9CRVMJ3" time="6.079">
+  <properties/>
+  <testcase name="testParallel()" classname="CrearPagareRunner" time="6.079"/>
+  <system-out><![CDATA[08:44:10.266 [Test worker] INFO  com.intuit.karate.Suite - backed up existing 'build\karate-reports' dir to: build\karate-reports_1709041450266
+08:44:11.296 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+08:44:12.412 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+08:44:12.714 [Test worker] INFO  com.intuit.karate - [print] {
+  "documentNumber": "1032461516",
+  "statusNegotiation": "Proceso termino con exitoso",
+  "numbersPagare": [
+    "3099870"
+  ]
+}
+ 
+08:44:12.734 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+08:44:13.816 [Test worker] INFO  com.intuit.karate - [print] {
+  "data": {
+    "client": {
+      "documentNumber": 1032461516,
+      "documentType": "Cedula de Ciudadania",
+      "statusNegotiation": "En proceso",
+      "firsName": "CHRIS",
+      "lastName": "RICO",
+      "mail": "crico@bancolombia.com.co",
+      "solicitante": "Konecta",
+      "girador": "458620"
+    },
+    "alternatives": [
+      {
+        "nameAlternative": "Consolidacion de Pasivos",
+        "descAlternative": "Se unifican varias deudas con nuevas condiciones, como períodos de gracia, ampliación del plazo, cambio en tasa de interés, entre otras. No te preocupes! tu calificación no será afectada negativamente en las centrales de información.",
+        "statusAlternative": "Pendiente Pagare para firma",
+        "maxValuePagare": "150000000",
+        "dataAlternative": [
+          {
+            "numberConsolidate": "43882548",
+            "concepto": "Capital",
+            "plan": "ET2",
+            "valuePagare": "100000000",
+            "documents": [
+              {
+                "nameDocument": "Seguro de vida",
+                "statusDocument": "Pendiente de firma",
+                "numDocument": "161",
+                "typeDocument": "seguro"
+              }
+            ]
+          },
+          {
+            "numberConsolidate": "43882548",
+            "concepto": "Interes Corrientes",
+            "plan": "ET2",
+            "valuePagare": "100000000",
+            "documents": [
+              {
+                "nameDocument": "Anexo de Operación",
+                "statusDocument": "Pendiente de firma",
+                "numDocument": "160",
+                "typeDocument": "anexo"
+              },
+              {
+                "nameDocument": "Pagaré",
+                "statusDocument": "Pendiente de firma",
+                "numDocument": "162",
+                "typeDocument": "pagare"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+ 
+---------------------------------------------------------
+feature: classpath:firma-electronica/crear-pagare/crear_pagare.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 2.4530
+---------------------------------------------------------
+
+08:44:14.738 [Test worker] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:firma-electronica/crear-pagare/crear_pagare.feature
+Karate version: 1.3.0
+======================================================
+elapsed:   5.19 | threads:    1 | thread time: 2.45 
+features:     1 | skipped:    0 | efficiency: 0.47
+scenarios:    3 | passed:     3 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.3.0
+file:///D:/AZURE/NU0388001_Instrumentador_De_Alternativas_MR_Test/firma_electronica_test/Instrumentador_De_Alternativas_firma_electronica_test/build/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  <system-err><![CDATA[Feb 27, 2024 8:44:14 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\AZURE\NU0388001_Instrumentador_De_Alternativas_MR_Test\firma_electronica_test\Instrumentador_De_Alternativas_firma_electronica_test\build\karate-reports\firma-electronica.crear-pagare.crear_pagare.json' contains 1 features
+]]></system-err>
+</testsuite>
