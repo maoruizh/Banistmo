@@ -33,11 +33,12 @@ Feature: validate crear girador api
     And request { 'documentNumber': <documentNumber>, 'documentType': <documentType> }
     When method POST
     Then status 200
+    * print response.data.alternatives
     And match $..statusAlternative == <messageNeg>
 
     Examples:
       |documentNumber|documentType| messageNeg |
-      |4655107       |1           | ["Pendiente por crear pagare"]|
+      |4655107       |1           | ["Pendiente por crear girador"]|
 
 
   Scenario Outline: create a new negociation <messageAdd>
