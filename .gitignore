@@ -42,6 +42,9 @@
 /.gradle
 */.gradle/
 */build/
+/build/
+.gradle/
+build/
 
 
 
