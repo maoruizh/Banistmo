@@ -1,0 +1,412 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="es" data-critters-container=""&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;title&gt;Cobranza digital&lt;/title&gt;&lt;base href="/"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br/>
+  &lt;meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"&gt;<br/>
+  &lt;meta http-equiv="Pragma" content="no-cache"&gt;<br/>
+  &lt;meta http-equiv="Expires" content="0"&gt;<br/>
+  &lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;<br/>
+  &lt;style&gt;@import"https://library-sdb.apps.bancolombia.com/bds/6.54.4/bds.min.css";@charset "UTF-8";:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13, 110, 253;--bs-secondary-rgb:108, 117, 125;--bs-success-rgb:25, 135, 84;--bs-info-rgb:13, 202, 240;--bs-warning-rgb:255, 193, 7;--bs-danger-rgb:220, 53, 69;--bs-light-rgb:248, 249, 250;--bs-dark-rgb:33, 37, 41;--bs-primary-text-emphasis:#052c65;--bs-secondary-text-emphasis:#2b2f32;--bs-success-text-emphasis:#0a3622;--bs-info-text-emphasis:#055160;--bs-warning-text-emphasis:#664d03;--bs-danger-text-emphasis:#58151c;--bs-light-text-emphasis:#495057;--bs-dark-text-emphasis:#495057;--bs-primary-bg-subtle:#cfe2ff;--bs-secondary-bg-subtle:#e2e3e5;--bs-success-bg-subtle:#d1e7dd;--bs-info-bg-subtle:#cff4fc;--bs-warning-bg-subtle:#fff3cd;--bs-danger-bg-subtle:#f8d7da;--bs-light-bg-subtle:#fcfcfd;--bs-dark-bg-subtle:#ced4da;--bs-primary-border-subtle:#9ec5fe;--bs-secondary-border-subtle:#c4c8cb;--bs-success-border-subtle:#a3cfbb;--bs-info-border-subtle:#9eeaf9;--bs-warning-border-subtle:#ffe69c;--bs-danger-border-subtle:#f1aeb5;--bs-light-border-subtle:#e9ecef;--bs-dark-border-subtle:#adb5bd;--bs-white-rgb:255, 255, 255;--bs-black-rgb:0, 0, 0;--bs-font-sans-serif:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--bs-font-monospace:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-color-rgb:33, 37, 41;--bs-body-bg:#fff;--bs-body-bg-rgb:255, 255, 255;--bs-emphasis-color:#000;--bs-emphasis-color-rgb:0, 0, 0;--bs-secondary-color:rgba(33, 37, 41, .75);--bs-secondary-color-rgb:33, 37, 41;--bs-secondary-bg:#e9ecef;--bs-secondary-bg-rgb:233, 236, 239;--bs-tertiary-color:rgba(33, 37, 41, .5);--bs-tertiary-color-rgb:33, 37, 41;--bs-tertiary-bg:#f8f9fa;--bs-tertiary-bg-rgb:248, 249, 250;--bs-heading-color:inherit;--bs-link-color:#0d6efd;--bs-link-color-rgb:13, 110, 253;--bs-link-decoration:underline;--bs-link-hover-color:#0a58ca;--bs-link-hover-color-rgb:10, 88, 202;--bs-code-color:#d63384;--bs-highlight-color:#212529;--bs-highlight-bg:#fff3cd;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, .175);--bs-border-radius:.375rem;--bs-border-radius-sm:.25rem;--bs-border-radius-lg:.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-xxl:2rem;--bs-border-radius-2xl:var(--bs-border-radius-xxl);--bs-border-radius-pill:50rem;--bs-box-shadow:0 .5rem 1rem rgba(0, 0, 0, .15);--bs-box-shadow-sm:0 .125rem .25rem rgba(0, 0, 0, .075);--bs-box-shadow-lg:0 1rem 3rem rgba(0, 0, 0, .175);--bs-box-shadow-inset:inset 0 1px 2px rgba(0, 0, 0, .075);--bs-focus-ring-width:.25rem;--bs-focus-ring-opacity:.25;--bs-focus-ring-color:rgba(13, 110, 253, .25);--bs-form-valid-color:#198754;--bs-form-valid-border-color:#198754;--bs-form-invalid-color:#dc3545;--bs-form-invalid-border-color:#dc3545}*,*:before,*:after{box-sizing:border-box}@media (prefers-reduced-motion: no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}:root{--bs-breakpoint-xs:0;--bs-breakpoint-sm:576px;--bs-breakpoint-md:768px;--bs-breakpoint-lg:992px;--bs-breakpoint-xl:1200px;--bs-breakpoint-xxl:1400px}body{background-color:#f4f4f4}&lt;/style&gt;<br/>
+  &lt;link rel="stylesheet" href="styles.d1544b312680988e.css" media="all" onload="this.media='all'"&gt;<br/>
+  &lt;noscript&gt;<br/>
+   &lt;link rel="stylesheet" href="styles.d1544b312680988e.css"&gt;<br/>
+  &lt;/noscript&gt;<br/>
+  &lt;style&gt;.contImTil[_ngcontent-ng-c2196033138]{text-align:center}.boton1[_ngcontent-ng-c2196033138]{margin-top:10px}.btn-primary-modal[_ngcontent-ng-c2196033138]{width:145px;height:38px;border-radius:100px}.reloj[_ngcontent-ng-c2196033138]{width:90px}.boton2[_ngcontent-ng-c2196033138]{margin-top:20px}.btn-secundary-modal[_ngcontent-ng-c2196033138]{width:145px;height:38px;border-radius:100px}.botones[_ngcontent-ng-c2196033138]{display:flex;justify-content:center;align-items:center;margin-top:10px}@media (max-width: 767px){.btn-primary-modal[_ngcontent-ng-c2196033138], .btn-secundary-modal[_ngcontent-ng-c2196033138]{width:280px;height:50px}.reloj[_ngcontent-ng-c2196033138]{width:48px}}&lt;/style&gt;<br/>
+  &lt;style&gt;.contImTil[_ngcontent-ng-c3428052066]{text-align:center}.boton1[_ngcontent-ng-c3428052066]{margin-top:10px}.btn-primary-modal[_ngcontent-ng-c3428052066]{width:282px;height:50px;border-radius:100px;font-size:17px}.can[_ngcontent-ng-c3428052066]{text-decoration:underline}.boton2[_ngcontent-ng-c3428052066]{margin-top:20px}.boton2[_ngcontent-ng-c3428052066]   a[_ngcontent-ng-c3428052066]{cursor:pointer}.btn-secundary-modal[_ngcontent-ng-c3428052066]{width:282px;height:50px;border-radius:100px;font-size:17px}.button[_ngcontent-ng-c3428052066]{font-size:17px}.botones[_ngcontent-ng-c3428052066]{display:grid;justify-content:center}@media (max-width: 767px){.btn-primary-modal[_ngcontent-ng-c3428052066], .btn-secundary-modal[_ngcontent-ng-c3428052066]{width:280px;height:50px;font-size:17px}}&lt;/style&gt;<br/>
+  &lt;style&gt;.lolx[_ngcontent-ng-c3597037408]{font-size:64px}.lolxDark[_ngcontent-ng-c3597037408]{font-size:64px;color:#fff;margin-left:-15px}.icono[_ngcontent-ng-c3597037408]{margin-left:-15px}.contx[_ngcontent-ng-c3597037408]{display:inherit;align-items:center;cursor:pointer;padding-right:3%}.contx[_ngcontent-ng-c3597037408]   bc-icon[_ngcontent-ng-c3597037408]{font-size:30px;margin-right:5px}.classDark[_ngcontent-ng-c3597037408]{background-color:#2c2a29}.light[_ngcontent-ng-c3597037408]{background-color:#fff}.contxDark[_ngcontent-ng-c3597037408]{margin-right:10px;display:inherit;align-items:center;cursor:pointer;color:#fff}.contxDark[_ngcontent-ng-c3597037408]   bc-icon[_ngcontent-ng-c3597037408]{font-size:30px;margin-right:5px;color:#fff}.stroke-none[_ngcontent-ng-c3597037408]{display:none}.logo-bancolombia[_ngcontent-ng-c3597037408]{size:220px}@media (max-width: 767px){.non[_ngcontent-ng-c3597037408]{display:none}bc-icon[_ngcontent-ng-c3597037408]{font-size:28px;margin-right:5px}}.pictures[_ngcontent-ng-c3597037408]{z-index:-1}@media screen and (max-width: 767px){.pictures[_ngcontent-ng-c3597037408]{display:none}}.pictures[_ngcontent-ng-c3597037408]   .left-picture[_ngcontent-ng-c3597037408]{width:12.5%;left:0;position:absolute;bottom:60%;overflow:hidden}.pictures[_ngcontent-ng-c3597037408]   .left-picture[_ngcontent-ng-c3597037408]   img[_ngcontent-ng-c3597037408]{object-fit:cover;width:100%;height:100%;right:20%;position:relative}.pictures[_ngcontent-ng-c3597037408]   .right-picture[_ngcontent-ng-c3597037408]{width:12%;right:0;position:absolute;bottom:0%;overflow:hidden}.pictures[_ngcontent-ng-c3597037408]   .right-picture[_ngcontent-ng-c3597037408]   img[_ngcontent-ng-c3597037408]{object-fit:cover;width:100%;height:100%;left:15%;position:relative}&lt;/style&gt;<br/>
+  &lt;style&gt;.luc[_ngcontent-ng-c695196731]{font-size:200px;transform:rotate(90deg);margin-top:-90px;margin-left:85px}.foi[_ngcontent-ng-c695196731]{max-width:230px}.piac[_ngcontent-ng-c695196731]{margin-top:10px}.bc-header-brand-logo[_ngcontent-ng-c695196731]{min-height:40px;color:#000}.cont[_ngcontent-ng-c695196731]{padding:2%}.ff[_ngcontent-ng-c695196731]{margin-top:-90px;width:430px}.ff[_ngcontent-ng-c695196731]   span[_ngcontent-ng-c695196731]{font-size:16px}.capitalize[_ngcontent-ng-c695196731]{text-transform:capitalize}.icono-grupo-bancolombia[_ngcontent-ng-c695196731]{height:50px;background-image:url(/../../../../../../assets/img/figmaSVG/logo-grupo.svg);background-repeat:no-repeat;background-size:190%;max-width:500px;margin-bottom:-15px}@media (max-width: 670px){.mobile[_ngcontent-ng-c695196731]{display:contents}.ff[_ngcontent-ng-c695196731]{margin-top:-70px;text-align:initial!important}.ff[_ngcontent-ng-c695196731]   p[_ngcontent-ng-c695196731]{font-size:14px;margin-bottom:0}.ff[_ngcontent-ng-c695196731]   span[_ngcontent-ng-c695196731]{font-size:14px}}.dark[_ngcontent-ng-c695196731]{background-color:#2c2a29;padding:20px 22px}.dark[_ngcontent-ng-c695196731]   p[_ngcontent-ng-c695196731]{color:#fff;font-weight:400;line-height:.1;font-size:12px}.dark[_ngcontent-ng-c695196731]   .logo[_ngcontent-ng-c695196731]{height:50px;background-image:url(/../../../../../../assets/img/figmaSVG/logo-grupo-white.svg);background-repeat:no-repeat;background-size:70%;margin-left:-30px;max-width:500px}@media (min-width: 767px){.footer-mobile[_ngcontent-ng-c695196731]{display:none}}.footer-desktop[_ngcontent-ng-c695196731]{display:flex;justify-content:space-between}.footer-desktop[_ngcontent-ng-c695196731]   .copyright-desktop[_ngcontent-ng-c695196731]{text-align:left}.footer-desktop[_ngcontent-ng-c695196731]   .copyright-desktop[_ngcontent-ng-c695196731]   bc-icon[_ngcontent-ng-c695196731]{color:#fff;margin-top:-22px;margin-left:-18px}.footer-desktop[_ngcontent-ng-c695196731]   .copyright-desktop[_ngcontent-ng-c695196731]   p[_ngcontent-ng-c695196731]{margin-top:-6px}.footer-desktop[_ngcontent-ng-c695196731]   .direccion-ip[_ngcontent-ng-c695196731]{text-align:right}@media (max-width: 767px){.footer-desktop[_ngcontent-ng-c695196731]{display:none}}&lt;/style&gt;<br/>
+  &lt;style type="text/css" id="kampyleStyle"&gt;.noOutline{outline: none !important;}.wcagOutline:focus{outline: 1px dashed #595959 !important;outline-offset: 2px !important;transition: none !important;}&lt;/style&gt;<br/>
+  &lt;style&gt;.yellow-circle[_ngcontent-ng-c1944880601]{height:75px;width:75px;background-color:#fdda24;border-radius:50%;display:flex;align-items:center;margin:0 auto}.wait[_ngcontent-ng-c1944880601]{position:fixed;width:100%;height:100%;background-color:#2c2a29cc;display:flex;align-items:center;z-index:999;top:0;left:0}.wait[_ngcontent-ng-c1944880601]   h4[_ngcontent-ng-c1944880601]{color:#fff}.center[_ngcontent-ng-c1944880601]{flex:auto;text-align:center}.limit-width[_ngcontent-ng-c1944880601]{max-width:328px}.center-text[_ngcontent-ng-c1944880601]{display:flex;justify-content:center}.animation[_ngcontent-ng-c1944880601]{animation-name:_ngcontent-ng-c1944880601_girarb;animation-duration:4s;animation-iteration-count:infinite;animation-timing-function:linear;display:inline-block}@keyframes _ngcontent-ng-c1944880601_girarb{0%{transform:rotate(0)}to{transform:rotate(360deg)}}@media (max-width: 1109px){.limit-width[_ngcontent-ng-c1944880601]{max-width:256px}}&lt;/style&gt;<br/>
+  &lt;style&gt;.contenedor-listado-creditos[_ngcontent-ng-c560646560]{margin-top:5.5rem;min-height:90vh}@media (min-width: 768px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   h2[_ngcontent-ng-c560646560]{margin-top:9rem;font-family:CIBFont Sans,sans-serif;font-size:24px;font-weight:700;line-height:28px;letter-spacing:0px}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   h3[_ngcontent-ng-c560646560]{text-align:center;width:300px;margin:auto}@media (max-width: 359px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   h3[_ngcontent-ng-c560646560]{width:100%}}@media (min-width: 768px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   h3[_ngcontent-ng-c560646560]{width:380px;font-family:CIBFont Sans,sans-serif;font-size:24px;font-weight:200;line-height:28px;letter-spacing:0px;margin-bottom:1.5rem}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   h4[_ngcontent-ng-c560646560]{text-align:center;width:350px;margin:auto}@media (max-width: 359px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   h4[_ngcontent-ng-c560646560]{width:100%}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .contenedor-tarjeta-desktop[_ngcontent-ng-c560646560]{border-radius:8px;background-color:#fff;width:447px;margin:auto}@media (max-width: 767px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .contenedor-tarjeta-desktop[_ngcontent-ng-c560646560]{background-color:#f4f4f4;width:100%}}@media (min-width: 768px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .contenedor-tarjeta-desktop[_ngcontent-ng-c560646560]{padding-top:.5rem;padding-bottom:2rem;box-shadow:0 1px 8px #2c2a2914}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]{background-color:#fff;min-height:150px;margin-top:.5rem}@media (max-width: 359px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]{margin-top:1.5rem;min-height:100%;padding-bottom:.5rem}}@media (min-width: 768px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]{width:370px;margin:auto}}@media (max-width: 359px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]{display:flex;flex-direction:column}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .tipo-credito[_ngcontent-ng-c560646560]{margin:auto;padding-top:1rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .tipo-credito[_ngcontent-ng-c560646560]   .dias-mora[_ngcontent-ng-c560646560]{margin:auto}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .tipo-credito[_ngcontent-ng-c560646560]   .libre-inversion[_ngcontent-ng-c560646560]{justify-content:center}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .descripcion[_ngcontent-ng-c560646560]{margin:auto;padding-top:1rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .saldo-mora[_ngcontent-ng-c560646560]{justify-content:center}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560]{width:319px;height:40px;margin:auto}@media (max-width: 370px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560]{width:90%;margin-top:1rem}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .dias-mora[_ngcontent-ng-c560646560]{border-radius:20px;width:110%;height:20px}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .dias-mora[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560]{display:flex;justify-content:center;align-items:center}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .descripcion[_ngcontent-ng-c560646560]   .valor[_ngcontent-ng-c560646560]{margin-top:-15px}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .descripcion[_ngcontent-ng-c560646560]   .saldo-mora[_ngcontent-ng-c560646560]{margin-top:-8px}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .boton-cambiar-condiciones[_ngcontent-ng-c560646560]{margin-top:-25px;padding-bottom:1.5rem}@media (max-width: 359px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .boton-cambiar-condiciones[_ngcontent-ng-c560646560]{margin-bottom:1rem}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .estado-credito[_ngcontent-ng-c560646560]{background-color:#f9f9fa;margin-top:-1rem;padding-top:1.5rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]{display:flex;flex-direction:row}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]{margin-bottom:.3rem;margin-top:1rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560]{margin:0}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]   #titulo-cuotas-pagadas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]   #cantidad-cuotas-pagadas[_ngcontent-ng-c560646560]{margin-left:1.5rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]   .bc-opensans-font-style-3-bold[_ngcontent-ng-c560646560]{color:#e20201}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]   #titulo-cuotas-vencidas[_ngcontent-ng-c560646560]{margin-left:1.5rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]   #cantidad-cuotas-vencidas[_ngcontent-ng-c560646560]{margin-left:.8rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .pago-pendiente[_ngcontent-ng-c560646560]   .bc-opensans-font-style-1-regular[_ngcontent-ng-c560646560]{margin-top:-1rem;padding-bottom:1.5rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .pago-pendiente[_ngcontent-ng-c560646560]   .bc-cibsans-font-style-6-regular[_ngcontent-ng-c560646560]{margin-top:-.2rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-credito-principal[_ngcontent-ng-c560646560]   .pago-pendiente[_ngcontent-ng-c560646560]   .bc-opensans-font-style-2-regular[_ngcontent-ng-c560646560]{margin-top:.5rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .icono-doble-down[_ngcontent-ng-c560646560]{background-color:#fff;height:30px;margin-top:1.5px;display:flex;justify-content:center;align-items:center;cursor:pointer}@media (min-width: 768px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .icono-doble-down[_ngcontent-ng-c560646560]{width:370px;margin:auto}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .boton-otro-momento[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560]{background-color:#f4f4f4;border:1px solid #2c2a29;height:40px;margin:auto;width:319px}@media (max-width: 359px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .boton-otro-momento[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560]{width:90%}}@media (min-width: 768px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .boton-otro-momento[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560]{width:200px}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .boton-salir[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560]{height:40px;margin:auto;width:319px}@media (max-width: 359px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .boton-salir[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560]{width:90%}}@media (min-width: 768px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .boton-salir[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560]{width:200px}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .linea-horizontal[_ngcontent-ng-c560646560]{border-bottom:2px solid #d9dadd;width:370px;margin:auto}@media (max-width: 767px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .linea-horizontal[_ngcontent-ng-c560646560]{display:none}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]{background-color:#fff;min-height:80px;margin-top:.5rem}@media (max-width: 359px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]{margin-top:1.5rem;min-height:100%;padding-bottom:.5rem}}@media (min-width: 768px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]{width:370px;margin:auto}}@media (max-width: 359px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]{display:flex;flex-direction:column}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .tipo-credito[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .tipo-credito[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .tipo-credito[_ngcontent-ng-c560646560]{margin:auto;padding-top:1rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .tipo-credito[_ngcontent-ng-c560646560]   .dias-mora[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .tipo-credito[_ngcontent-ng-c560646560]   .dias-mora[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .tipo-credito[_ngcontent-ng-c560646560]   .dias-mora[_ngcontent-ng-c560646560]{margin:auto}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .tipo-credito[_ngcontent-ng-c560646560]   .libre-inversion[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .tipo-credito[_ngcontent-ng-c560646560]   .libre-inversion[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .tipo-credito[_ngcontent-ng-c560646560]   .libre-inversion[_ngcontent-ng-c560646560]{justify-content:center}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .descripcion[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .descripcion[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .descripcion[_ngcontent-ng-c560646560]{margin:auto;padding-top:1rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .saldo-mora[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .saldo-mora[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .tarjeta-credito-secundaria[_ngcontent-ng-c560646560]   .bc-flex.bc-justify-content-between[_ngcontent-ng-c560646560]   .saldo-mora[_ngcontent-ng-c560646560]{justify-content:center}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560]{width:319px;height:40px;margin:auto}@media (max-width: 370px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   button[_ngcontent-ng-c560646560]{width:90%;margin-top:1rem}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .en-proceso[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .aplicado[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .en-proceso[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .aplicado[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .en-proceso[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .aplicado[_ngcontent-ng-c560646560]{border-radius:20px;width:110%;height:20px;background-color:#b0ecda;border:1px solid #00C389}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .en-proceso[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .aplicado[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .en-proceso[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .aplicado[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .en-proceso[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .aplicado[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560]{display:flex;justify-content:center;align-items:center}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .rechazado[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .rechazado[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .rechazado[_ngcontent-ng-c560646560]{border-radius:20px;width:110%;height:20px;background-color:#fce8f0;border:1px solid #F5B6CD}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .rechazado[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .rechazado[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .rechazado[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560]{display:flex;justify-content:center;align-items:center}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .dias-mora[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .dias-mora[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .dias-mora[_ngcontent-ng-c560646560]{border-radius:20px;width:110%;height:20px}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .dias-mora[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .dias-mora[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .dias-mora[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560]{display:flex;justify-content:center;align-items:center}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .descripcion[_ngcontent-ng-c560646560]   .valor[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .descripcion[_ngcontent-ng-c560646560]   .valor[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .descripcion[_ngcontent-ng-c560646560]   .valor[_ngcontent-ng-c560646560]{margin-top:-15px}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .descripcion[_ngcontent-ng-c560646560]   .saldo-mora[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .descripcion[_ngcontent-ng-c560646560]   .saldo-mora[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .descripcion[_ngcontent-ng-c560646560]   .saldo-mora[_ngcontent-ng-c560646560]{margin-top:-8px}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .boton-cambiar-condiciones[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .boton-cambiar-condiciones[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .boton-cambiar-condiciones[_ngcontent-ng-c560646560]{margin-top:-25px;padding-bottom:1.5rem}@media (max-width: 359px){.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .boton-cambiar-condiciones[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .boton-cambiar-condiciones[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .boton-cambiar-condiciones[_ngcontent-ng-c560646560]{margin-bottom:1rem}}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .estado-credito[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .estado-credito[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .estado-credito[_ngcontent-ng-c560646560]{background-color:#f9f9fa;margin-top:-1rem;padding-top:1.5rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]{display:flex;flex-direction:row}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]{margin-bottom:.3rem;margin-top:1rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]   p[_ngcontent-ng-c560646560]{margin:0}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]   #titulo-cuotas-pagadas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]   #titulo-cuotas-pagadas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]   #titulo-cuotas-pagadas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]   #cantidad-cuotas-pagadas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]   #cantidad-cuotas-pagadas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .cuotas-pagadas[_ngcontent-ng-c560646560]   #cantidad-cuotas-pagadas[_ngcontent-ng-c560646560]{margin-left:1.5rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]   .bc-opensans-font-style-3-bold[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]   .bc-opensans-font-style-3-bold[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]   .bc-opensans-font-style-3-bold[_ngcontent-ng-c560646560]{color:#e20201}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]   #titulo-cuotas-vencidas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]   #titulo-cuotas-vencidas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]   #titulo-cuotas-vencidas[_ngcontent-ng-c560646560]{margin-left:1.5rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]   #cantidad-cuotas-vencidas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]   #cantidad-cuotas-vencidas[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .cuotas-vencidas[_ngcontent-ng-c560646560]   #cantidad-cuotas-vencidas[_ngcontent-ng-c560646560]{margin-left:.8rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .pago-pendiente[_ngcontent-ng-c560646560]   .bc-opensans-font-style-1-regular[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .pago-pendiente[_ngcontent-ng-c560646560]   .bc-opensans-font-style-1-regular[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .pago-pendiente[_ngcontent-ng-c560646560]   .bc-opensans-font-style-1-regular[_ngcontent-ng-c560646560]{margin-top:-1rem;padding-bottom:1.5rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .pago-pendiente[_ngcontent-ng-c560646560]   .bc-cibsans-font-style-6-regular[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .pago-pendiente[_ngcontent-ng-c560646560]   .bc-cibsans-font-style-6-regular[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .pago-pendiente[_ngcontent-ng-c560646560]   .bc-cibsans-font-style-6-regular[_ngcontent-ng-c560646560]{margin-top:-.2rem}.contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-en-proceso[_ngcontent-ng-c560646560]   .pago-pendiente[_ngcontent-ng-c560646560]   .bc-opensans-font-style-2-regular[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-aplicado[_ngcontent-ng-c560646560]   .pago-pendiente[_ngcontent-ng-c560646560]   .bc-opensans-font-style-2-regular[_ngcontent-ng-c560646560], .contenedor-listado-creditos[_ngcontent-ng-c560646560]   .tarjeta-rechazado[_ngcontent-ng-c560646560]   .pago-pendiente[_ngcontent-ng-c560646560]   .bc-opensans-font-style-2-regular[_ngcontent-ng-c560646560]{margin-top:.5rem}&lt;/style&gt;<br/>
+  &lt;style&gt;.pictures[_ngcontent-ng-c249589618]{z-index:-1}@media screen and (max-width: 768px){.pictures[_ngcontent-ng-c249589618]{display:none}}.pictures[_ngcontent-ng-c249589618]   .left-picture[_ngcontent-ng-c249589618]{width:12.5%;left:0;position:absolute;bottom:50%;overflow:hidden}.pictures[_ngcontent-ng-c249589618]   .left-picture[_ngcontent-ng-c249589618]   img[_ngcontent-ng-c249589618]{object-fit:cover;width:100%;height:100%;right:20%;position:relative}.pictures[_ngcontent-ng-c249589618]   .right-picture[_ngcontent-ng-c249589618]{width:12%;right:0;position:absolute;bottom:0%;overflow:hidden}.pictures[_ngcontent-ng-c249589618]   .right-picture[_ngcontent-ng-c249589618]   img[_ngcontent-ng-c249589618]{object-fit:cover;width:100%;height:100%;left:15%;position:relative}&lt;/style&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;&lt;app-root ng-version="16.2.12"&gt;<br/>
+   &lt;app-navbar _nghost-ng-c3597037408=""&gt;<br/>
+    &lt;bc-header _ngcontent-ng-c3597037408="" class="classDark"&gt;<br/>
+     &lt;article id="jt.85588916" class="bc-fixed bc-header-wrapper-black"&gt;<br/>
+      &lt;header class="bc-header"&gt;<br/>
+       &lt;!----&gt;&lt;bc-logo _ngcontent-ng-c3597037408="" size="220px" name="bancolombia-horizontal-negative" alt="logo" aria-hidden="false" class="bc-logo" style="width: 220px;"&gt;<br/>
+        &lt;img src="https://library-sdb.apps.bancolombia.com/bds/6.54.4/assets/icons/logos/bancolombia-horizontal-negative.svg" alt="logo" style="width: 220px;"&gt;<br/>
+       &lt;/bc-logo&gt;&lt;!----&gt;<br/>
+       &lt;div _ngcontent-ng-c3597037408="" class="contx contxDark"&gt;<br/>
+        &lt;bc-icon _ngcontent-ng-c3597037408="" role="img" name="quit" aria-hidden="true" aria-label="Salir" class="loli bc-icon bc-sm"&gt;<br/>
+         quit<br/>
+        &lt;/bc-icon&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/header&gt;<br/>
+     &lt;/article&gt;<br/>
+    &lt;/bc-header&gt;&lt;!----&gt;<br/>
+    &lt;app-modal _ngcontent-ng-c3597037408="" _nghost-ng-c3428052066=""&gt;<br/>
+     &lt;button _ngcontent-ng-c3428052066="" bc-button="" sizebutton="small" class="button bc-button-fill bc-button-primary bc-button-small" style="width: 50px; background: rgb(255, 255, 255); border: none; box-shadow: none; font-weight: 200; padding: 0px; margin: 0px;"&gt; &lt;/button&gt;&lt;!----&gt;<br/>
+     &lt;bc-modal _ngcontent-ng-c3428052066="" typenotify=""&gt;<br/>
+      &lt;article role="dialog" aria-labelledby="id" aria-modal="true" class="bc-modal" id="M.4260438347" outerclosetap="false"&gt;<br/>
+       &lt;label for="" class="bc-modal-close"&gt;&lt;/label&gt;<br/>
+       &lt;section class="bc-modal-container" customwidth="small" titlealign="center" buttonalignment="vertical" subtitle="false" typeicon="false" iscancellable="false" displaybutton="false" role="alertdialog" aria-modal="true" aria-label="false"&gt;<br/>
+        &lt;section class="bc-modal-close-button-container"&gt;<br/>
+         &lt;div&gt;<br/>
+          &lt;button class="bc-direction-row bc-icon bc-modal-close-button bc-sm" aria-label="cerrar" tabindex="0" aria-pressed="false"&gt;error &lt;/button&gt;&lt;!----&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/section&gt;&lt;!----&gt;<br/>
+        &lt;section class="bc-modal-icon-container"&gt;<br/>
+         &lt;div&gt;<br/>
+          &lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/section&gt;&lt;!----&gt;<br/>
+        &lt;section class="bc-modal-title bc-direction-row bc-margin-top-2 bc-margin-bottom-2" aria-labelledby="M.4260438347"&gt;<br/>
+         &lt;h4 id="M.4260438347" class="modal-title-label"&gt;&lt;/h4&gt;<br/>
+        &lt;/section&gt;<br/>
+        &lt;section class="bc-modal-title bc-direction-row"&gt;<br/>
+         &lt;p&gt;&lt;/p&gt;<br/>
+        &lt;/section&gt;<br/>
+        &lt;section class="bc-modal-content" aria-describedby="elemento Descripcion"&gt;<br/>
+         &lt;div _ngcontent-ng-c3428052066="" modalcontent=""&gt;<br/>
+          &lt;div _ngcontent-ng-c3428052066=""&gt;<br/>
+           &lt;div _ngcontent-ng-c3428052066="" class="contImTil"&gt;<br/>
+            &lt;div _ngcontent-ng-c3428052066=""&gt;<br/>
+             &lt;bc-icon _ngcontent-ng-c3428052066="" role="img" aria-hidden="true" class="bc-sm bc-icon" style="width: 100px;"&gt;<br/>
+              &lt;img src="https://library-sdb.apps.bancolombia.com/bds/6.54.4/assets/icons/pictograms/mano_1.svg" style="width: 100px;"&gt;<br/>
+             &lt;/bc-icon&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div _ngcontent-ng-c3428052066=""&gt;<br/>
+             &lt;h4 _ngcontent-ng-c3428052066=""&gt;¿Estas seguro que quieres Salir?&lt;/h4&gt;<br/>
+             &lt;p _ngcontent-ng-c3428052066="" class="p1" style="display: inline;"&gt;Estas alternativas&lt;/p&gt;<br/>
+             &lt;p _ngcontent-ng-c3428052066="" class="p1" style="font-weight: bold; display: inline;"&gt;estarán esperando por ti hasta el 20 de julio de 2024&lt;/p&gt;<br/>
+             &lt;p _ngcontent-ng-c3428052066="" class="p1" style="display: inline; padding-bottom: 45px;"&gt;por si cambias de opinión.&lt;/p&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+             &lt;div _ngcontent-ng-c3428052066="" class="botones"&gt;<br/>
+              &lt;div _ngcontent-ng-c3428052066="" class="boton1"&gt;<br/>
+               &lt;button _ngcontent-ng-c3428052066="" bc-button="" typebutton="primary" sizebutton="small" class="btn-primary-modal bc-button-fill bc-button-primary bc-button-small"&gt; Volver &lt;/button&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div _ngcontent-ng-c3428052066="" class="boton2"&gt;<br/>
+               &lt;button _ngcontent-ng-c3428052066="" bc-button="" typebutton="secondary" sizebutton="small" class="btn-secundary-modal bc-button-fill bc-button-secondary bc-button-small"&gt; Salir &lt;/button&gt;<br/>
+              &lt;/div&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/section&gt;<br/>
+        &lt;section class="bc-modal-button-container"&gt;<br/>
+         &lt;button bc-button="" sizebutton="small" class="bc-button-fill bc-button-primary bc-button-small" aria-pressed="false"&gt;&lt;/button&gt;&lt;!----&gt;<br/>
+        &lt;/section&gt;<br/>
+        &lt;section class="bc-modal-footer"&gt;&lt;/section&gt;<br/>
+       &lt;/section&gt;<br/>
+      &lt;/article&gt;<br/>
+     &lt;/bc-modal&gt;<br/>
+    &lt;/app-modal&gt;<br/>
+   &lt;/app-navbar&gt;&lt;!----&gt;<br/>
+   &lt;router-outlet&gt;&lt;/router-outlet&gt;<br/>
+   &lt;app-listado-creditos _nghost-ng-c560646560=""&gt;<br/>
+    &lt;!----&gt;<br/>
+    &lt;div _ngcontent-ng-c560646560="" class="contenedor-listado-creditos"&gt;<br/>
+     &lt;div _ngcontent-ng-c560646560="" class="titulos"&gt;<br/>
+      &lt;div _ngcontent-ng-c560646560=""&gt;<br/>
+       &lt;h2 _ngcontent-ng-c560646560="" id="titulo-buenas-noticias" class="bc-cibsans-font-style-5-bold bc-flex bc-justify-content-center"&gt;¡Buenas noticias!&lt;/h2&gt;<br/>
+       &lt;h3 _ngcontent-ng-c560646560="" id="subtitulo-nueva-opcion-pago" class="bc-cibsans-font-style-5-extralight"&gt;Tienes una nueva opción de pago para 1 de tus créditos&lt;/h3&gt;<br/>
+      &lt;/div&gt;&lt;!----&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div _ngcontent-ng-c560646560="" class="contenedor-tarjeta-desktop"&gt;<br/>
+      &lt;div _ngcontent-ng-c560646560="" class="subtitulo-desktop"&gt;<br/>
+       &lt;h4 _ngcontent-ng-c560646560="" id="subtitulo-cambiar-condiciones" class="bc-cibsans-font-style-3-bold bc-mt-4 bc-pt-4"&gt;Cambia las condiciones para cada uno de ellos: aplaza y disminuye tu cuota.&lt;/h4&gt;<br/>
+      &lt;/div&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+      &lt;div _ngcontent-ng-c560646560="" id="estado-en-blanco"&gt;<br/>
+       &lt;div _ngcontent-ng-c560646560="" id="tarjeta-credito-principal" class="tarjeta-credito-principal bc-mx-3"&gt;<br/>
+        &lt;div _ngcontent-ng-c560646560="" class="tarjeta-credito-secundaria"&gt;<br/>
+         &lt;div _ngcontent-ng-c560646560="" class="bc-flex bc-justify-content-between"&gt;<br/>
+          &lt;div _ngcontent-ng-c560646560="" class="tipo-credito bc-m-3"&gt;<br/>
+           &lt;p _ngcontent-ng-c560646560="" id="credito-libre-inversion" class="libre-inversion bc-opensans-font-style-2-regular bc-flex bc-justify-content-start"&gt;Libre inversion&lt;/p&gt;<br/>
+           &lt;div _ngcontent-ng-c560646560="" id="dias-mora" class="dias-mora" style="background-color: rgb(252, 232, 240); border: 1px solid rgb(245, 182, 205);"&gt;<br/>
+            &lt;div _ngcontent-ng-c560646560="" class="bc-opensans-font-style-2-semibold bc-flex bc-justify-content-center"&gt;<br/>
+             109 días de mora<br/>
+            &lt;/div&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div _ngcontent-ng-c560646560="" class="descripcion bc-m-3"&gt;<br/>
+           &lt;p _ngcontent-ng-c560646560="" id="numero-radicado" class="bc-opensans-font-style-2-regular bc-flex bc-justify-content-end"&gt;Nº 2760298968&lt;/p&gt;<br/>
+           &lt;p _ngcontent-ng-c560646560="" id="subtitulo-saldo-mora" class="saldo-mora bc-opensans-font-style-1-regular bc-flex bc-justify-content-end"&gt;Saldo en mora&lt;/p&gt;<br/>
+           &lt;p _ngcontent-ng-c560646560="" id="valor-saldo" class="valor bc-opensans-font-style-3-bold bc-flex bc-justify-content-end"&gt;$&nbsp;75.801,00&lt;/p&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;!----&gt;<br/>
+        &lt;div _ngcontent-ng-c560646560="" id="boton-cambiar-condiciones" class="boton-cambiar-condiciones bc-mt-3 bc-mx-3"&gt;<br/>
+         &lt;button _ngcontent-ng-c560646560="" bc-button="" class="bc-button bc-button-fill bc-button-primary"&gt; Cambiar &lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c560646560="" id="icono-doble-down" class="icono-doble-down bc-mx-3"&gt;<br/>
+        &lt;bc-icon _ngcontent-ng-c560646560="" role="img" size="sm" name="angle-double-down" arialabel="name" aria-hidden="false" class="bc-icon bc-sm" aria-label="name"&gt;<br/>
+         angle-double-down<br/>
+        &lt;/bc-icon&gt;<br/>
+       &lt;/div&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+       &lt;div _ngcontent-ng-c560646560="" class="linea-horizontal"&gt;&lt;/div&gt;&lt;!----&gt;<br/>
+      &lt;/div&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div _ngcontent-ng-c560646560="" id="boton-otro-momento" class="boton-otro-momento bc-my-4 bc-mx-3"&gt;<br/>
+      &lt;button _ngcontent-ng-c560646560="" bc-button="" class="bc-button bc-button-fill bc-button-primary"&gt;En otro momento&lt;/button&gt;<br/>
+     &lt;/div&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;app-modal _ngcontent-ng-c560646560="" _nghost-ng-c3428052066=""&gt;<br/>
+     &lt;button _ngcontent-ng-c3428052066="" bc-button="" sizebutton="small" class="button bc-button-fill bc-button-primary bc-button-small" style="width: 50px; background: rgb(255, 255, 255); border: none; box-shadow: none; font-weight: 200; padding: 0px; margin: 0px;"&gt; &lt;/button&gt;&lt;!----&gt;<br/>
+     &lt;bc-modal _ngcontent-ng-c3428052066="" typenotify=""&gt;<br/>
+      &lt;article role="dialog" aria-labelledby="id" aria-modal="true" class="bc-modal" id="M.3137589319" outerclosetap="false"&gt;<br/>
+       &lt;label for="" class="bc-modal-close"&gt;&lt;/label&gt;<br/>
+       &lt;section class="bc-modal-container" customwidth="small" titlealign="center" buttonalignment="vertical" subtitle="false" typeicon="false" iscancellable="false" displaybutton="false" role="alertdialog" aria-modal="true" aria-label="false"&gt;<br/>
+        &lt;section class="bc-modal-close-button-container"&gt;<br/>
+         &lt;div&gt;<br/>
+          &lt;button class="bc-direction-row bc-icon bc-modal-close-button bc-sm" aria-label="cerrar" tabindex="0" aria-pressed="false"&gt;error &lt;/button&gt;&lt;!----&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/section&gt;&lt;!----&gt;<br/>
+        &lt;section class="bc-modal-icon-container"&gt;<br/>
+         &lt;div&gt;<br/>
+          &lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/section&gt;&lt;!----&gt;<br/>
+        &lt;section class="bc-modal-title bc-direction-row bc-margin-top-2 bc-margin-bottom-2" aria-labelledby="M.3137589319"&gt;<br/>
+         &lt;h4 id="M.3137589319" class="modal-title-label"&gt;&lt;/h4&gt;<br/>
+        &lt;/section&gt;<br/>
+        &lt;section class="bc-modal-title bc-direction-row"&gt;<br/>
+         &lt;p&gt;&lt;/p&gt;<br/>
+        &lt;/section&gt;<br/>
+        &lt;section class="bc-modal-content" aria-describedby="elemento Descripcion"&gt;<br/>
+         &lt;div _ngcontent-ng-c3428052066="" modalcontent=""&gt;<br/>
+          &lt;div _ngcontent-ng-c3428052066=""&gt;<br/>
+           &lt;div _ngcontent-ng-c3428052066="" class="contImTil"&gt;<br/>
+            &lt;div _ngcontent-ng-c3428052066=""&gt;<br/>
+             &lt;bc-icon _ngcontent-ng-c3428052066="" role="img" aria-hidden="true" class="bc-sm bc-icon" style="width: 100px;"&gt;<br/>
+              &lt;img src="https://library-sdb.apps.bancolombia.com/bds/6.54.4/assets/icons/pictograms/mano_1.svg" style="width: 100px;"&gt;<br/>
+             &lt;/bc-icon&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div _ngcontent-ng-c3428052066=""&gt;<br/>
+             &lt;h4 _ngcontent-ng-c3428052066=""&gt;¿Estas seguro que quieres Salir?&lt;/h4&gt;<br/>
+             &lt;p _ngcontent-ng-c3428052066="" class="p1" style="display: inline;"&gt;Estas alternativas&lt;/p&gt;<br/>
+             &lt;p _ngcontent-ng-c3428052066="" class="p1" style="font-weight: bold; display: inline;"&gt;estarán esperando por ti hasta el 20 de julio de 2024&lt;/p&gt;<br/>
+             &lt;p _ngcontent-ng-c3428052066="" class="p1" style="display: inline; padding-bottom: 45px;"&gt;por si cambias de opinión.&lt;/p&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+             &lt;div _ngcontent-ng-c3428052066="" class="botones"&gt;<br/>
+              &lt;div _ngcontent-ng-c3428052066="" class="boton1"&gt;<br/>
+               &lt;button _ngcontent-ng-c3428052066="" bc-button="" typebutton="primary" sizebutton="small" class="btn-primary-modal bc-button-fill bc-button-primary bc-button-small"&gt; Volver &lt;/button&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div _ngcontent-ng-c3428052066="" class="boton2"&gt;<br/>
+               &lt;button _ngcontent-ng-c3428052066="" bc-button="" typebutton="secondary" sizebutton="small" class="btn-secundary-modal bc-button-fill bc-button-secondary bc-button-small"&gt; Salir &lt;/button&gt;<br/>
+              &lt;/div&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/section&gt;<br/>
+        &lt;section class="bc-modal-button-container"&gt;<br/>
+         &lt;button bc-button="" sizebutton="small" class="bc-button-fill bc-button-primary bc-button-small" aria-pressed="false"&gt;&lt;/button&gt;&lt;!----&gt;<br/>
+        &lt;/section&gt;<br/>
+        &lt;section class="bc-modal-footer"&gt;&lt;/section&gt;<br/>
+       &lt;/section&gt;<br/>
+      &lt;/article&gt;<br/>
+     &lt;/bc-modal&gt;<br/>
+    &lt;/app-modal&gt;<br/>
+    &lt;app-mtts-strokes _ngcontent-ng-c560646560="" _nghost-ng-c249589618=""&gt;<br/>
+     &lt;div _ngcontent-ng-c249589618="" class="pictures"&gt;<br/>
+      &lt;div _ngcontent-ng-c249589618="" class="left-picture"&gt;<br/>
+       &lt;img _ngcontent-ng-c249589618="" fxshow.lt-sm="false" src="assets/img/figmaSVG/09.left.svg" alt="Trazo izquierdo" class="left"&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div _ngcontent-ng-c249589618="" class="right-picture"&gt;<br/>
+       &lt;img _ngcontent-ng-c249589618="" fxshow.lt-sm="false" src="assets/img/figmaSVG/09.right.svg" alt="Trazo derecha" class="right"&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/app-mtts-strokes&gt;<br/>
+   &lt;/app-listado-creditos&gt;&lt;!----&gt;<br/>
+   &lt;app-footer _nghost-ng-c695196731=""&gt;<br/>
+    &lt;!----&gt;<br/>
+    &lt;div _ngcontent-ng-c695196731="" class="dark footer-mobile"&gt;<br/>
+     &lt;div _ngcontent-ng-c695196731=""&gt;<br/>
+      &lt;div _ngcontent-ng-c695196731="" class="logo"&gt;&lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div _ngcontent-ng-c695196731=""&gt;<br/>
+      &lt;p _ngcontent-ng-c695196731="" class="bc-opensans-font-style-1-regular"&gt;Fecha actual: 9 de mayo de 2024&lt;/p&gt;<br/>
+      &lt;p _ngcontent-ng-c695196731="" class="bc-opensans-font-style-1-regular"&gt;Último ingreso: 24 de julio de 2023, 8:17 a.&nbsp;m.&lt;/p&gt;<br/>
+      &lt;p _ngcontent-ng-c695196731="" class="bc-opensans-font-style-1-regular"&gt;IP: 186.121.106.130&lt;/p&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;&lt;!----&gt;<br/>
+    &lt;div _ngcontent-ng-c695196731="" class="dark footer-desktop bc-justify-content-space-between"&gt;<br/>
+     &lt;div _ngcontent-ng-c695196731="" class="copyright-desktop"&gt;<br/>
+      &lt;bc-icon _ngcontent-ng-c695196731="" role="img" name="bancolombia-horizontal" size="xl" aria-label="prueba" aria-hidden="true" class="bc-icon bc-xl" style="width: auto;"&gt;<br/>
+       bancolombia-horizontal<br/>
+      &lt;/bc-icon&gt;<br/>
+      &lt;p _ngcontent-ng-c695196731=""&gt;Copyright © 2024 Grupo Bancolombia.&lt;/p&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div _ngcontent-ng-c695196731="" class="direccion-ip"&gt;<br/>
+      &lt;p _ngcontent-ng-c695196731="" class="bc-opensans-font-style-1-regular"&gt;Dirección IP: 186.121.106.130&lt;/p&gt;<br/>
+      &lt;p _ngcontent-ng-c695196731="" class="bc-opensans-font-style-1-regular"&gt;Última visita lunes 24 de julio de 2023, 8:17 a.&nbsp;m.&lt;/p&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;&lt;!----&gt;<br/>
+   &lt;/app-footer&gt;&lt;!----&gt;<br/>
+   &lt;app-moda-esp _nghost-ng-c2196033138=""&gt;<br/>
+    &lt;!----&gt;<br/>
+    &lt;bc-modal _ngcontent-ng-c2196033138="" typenotify=""&gt;<br/>
+     &lt;article role="dialog" aria-labelledby="id" aria-modal="true" class="bc-modal" id="M.3496342993" outerclosetap="false"&gt;<br/>
+      &lt;label for="" class="bc-modal-close"&gt;&lt;/label&gt;<br/>
+      &lt;section class="bc-modal-container" customwidth="small" titlealign="center" buttonalignment="vertical" subtitle="false" typeicon="false" iscancellable="false" displaybutton="false" role="alertdialog" aria-modal="true" aria-label="false"&gt;<br/>
+       &lt;section class="bc-modal-close-button-container"&gt;<br/>
+        &lt;div&gt;<br/>
+         &lt;!----&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/section&gt;&lt;!----&gt;<br/>
+       &lt;section class="bc-modal-icon-container"&gt;<br/>
+        &lt;div&gt;<br/>
+         &lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/section&gt;&lt;!----&gt;<br/>
+       &lt;section class="bc-modal-title bc-direction-row bc-margin-top-2 bc-margin-bottom-2" aria-labelledby="M.3496342993"&gt;<br/>
+        &lt;h4 id="M.3496342993" class="modal-title-label"&gt;&lt;/h4&gt;<br/>
+       &lt;/section&gt;<br/>
+       &lt;section class="bc-modal-title bc-direction-row"&gt;<br/>
+        &lt;p&gt;&lt;/p&gt;<br/>
+       &lt;/section&gt;<br/>
+       &lt;section class="bc-modal-content" aria-describedby="elemento Descripcion"&gt;<br/>
+        &lt;div _ngcontent-ng-c2196033138="" modalcontent=""&gt;<br/>
+         &lt;div _ngcontent-ng-c2196033138=""&gt;<br/>
+          &lt;div _ngcontent-ng-c2196033138="" class="contImTil"&gt;<br/>
+           &lt;div _ngcontent-ng-c2196033138=""&gt;<br/>
+            &lt;img _ngcontent-ng-c2196033138="" src="./../../../../assets/img/figmaSVG/pic-clock.svg" alt="reloj" class="reloj"&gt;<br/>
+           &lt;/div&gt;&lt;!----&gt;<br/>
+           &lt;div _ngcontent-ng-c2196033138=""&gt;<br/>
+            &lt;h4 _ngcontent-ng-c2196033138=""&gt;La sesión ha caducado&lt;/h4&gt;<br/>
+            &lt;p _ngcontent-ng-c2196033138="" class="p1"&gt;Cerramos la sesión porque has superado el tiempo límite de inactividad.&lt;/p&gt;<br/>
+            &lt;p _ngcontent-ng-c2196033138="" class="p1"&gt;&lt;/p&gt;<br/>
+            &lt;p _ngcontent-ng-c2196033138="" class="p1"&gt;&lt;/p&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+            &lt;div _ngcontent-ng-c2196033138="" class="botones"&gt;<br/>
+             &lt;div _ngcontent-ng-c2196033138="" class="boton1"&gt;<br/>
+              &lt;button _ngcontent-ng-c2196033138="" bc-button="" typebutton="primary" sizebutton="small" class="btn-primary-modal bc-button-fill bc-button-primary bc-button-small"&gt; SALIR &lt;/button&gt;<br/>
+             &lt;/div&gt;&lt;!----&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/section&gt;<br/>
+       &lt;section class="bc-modal-button-container"&gt;<br/>
+        &lt;button bc-button="" sizebutton="small" class="bc-button-fill bc-button-primary bc-button-small" aria-pressed="false"&gt;&lt;/button&gt;&lt;!----&gt;<br/>
+       &lt;/section&gt;<br/>
+       &lt;section class="bc-modal-footer"&gt;&lt;/section&gt;<br/>
+      &lt;/section&gt;<br/>
+     &lt;/article&gt;<br/>
+    &lt;/bc-modal&gt;<br/>
+   &lt;/app-moda-esp&gt;<br/>
+   &lt;app-moda-esp _nghost-ng-c2196033138=""&gt;<br/>
+    &lt;!----&gt;<br/>
+    &lt;bc-modal _ngcontent-ng-c2196033138="" typenotify=""&gt;<br/>
+     &lt;article role="dialog" aria-labelledby="id" aria-modal="true" class="bc-modal" id="M.4179592209" outerclosetap="false"&gt;<br/>
+      &lt;label for="" class="bc-modal-close"&gt;&lt;/label&gt;<br/>
+      &lt;section class="bc-modal-container" customwidth="small" titlealign="center" buttonalignment="vertical" subtitle="false" typeicon="false" iscancellable="false" displaybutton="false" role="alertdialog" aria-modal="true" aria-label="false"&gt;<br/>
+       &lt;section class="bc-modal-close-button-container"&gt;<br/>
+        &lt;div&gt;<br/>
+         &lt;!----&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/section&gt;&lt;!----&gt;<br/>
+       &lt;section class="bc-modal-icon-container"&gt;<br/>
+        &lt;div&gt;<br/>
+         &lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/section&gt;&lt;!----&gt;<br/>
+       &lt;section class="bc-modal-title bc-direction-row bc-margin-top-2 bc-margin-bottom-2" aria-labelledby="M.4179592209"&gt;<br/>
+        &lt;h4 id="M.4179592209" class="modal-title-label"&gt;&lt;/h4&gt;<br/>
+       &lt;/section&gt;<br/>
+       &lt;section class="bc-modal-title bc-direction-row"&gt;<br/>
+        &lt;p&gt;&lt;/p&gt;<br/>
+       &lt;/section&gt;<br/>
+       &lt;section class="bc-modal-content" aria-describedby="elemento Descripcion"&gt;<br/>
+        &lt;div _ngcontent-ng-c2196033138="" modalcontent=""&gt;<br/>
+         &lt;div _ngcontent-ng-c2196033138=""&gt;<br/>
+          &lt;div _ngcontent-ng-c2196033138="" class="contImTil"&gt;<br/>
+           &lt;!----&gt;<br/>
+           &lt;div _ngcontent-ng-c2196033138=""&gt;<br/>
+            &lt;h4 _ngcontent-ng-c2196033138=""&gt;¿Sigues con nosotros?&lt;/h4&gt;<br/>
+            &lt;p _ngcontent-ng-c2196033138="" class="p1"&gt;Por seguridad tu sesión cerrará en:&lt;/p&gt;<br/>
+            &lt;p _ngcontent-ng-c2196033138="" class="p1"&gt;&lt;/p&gt;<br/>
+            &lt;p _ngcontent-ng-c2196033138="" class="p1"&gt;&lt;/p&gt;<br/>
+            &lt;p _ngcontent-ng-c2196033138="" class="p2" style="font-size: 40px; font-weight: 700; margin-top: 40px;"&gt;02:00s&lt;/p&gt;&lt;!----&gt;&lt;bc-progress-bar _ngcontent-ng-c2196033138="" id="bc-progress-bar" type="lineal" color="yellow" background-color="light" class="bc-progress-bar"&gt;<br/>
+             &lt;div class="bc-progress-bar" id="a.1983755138" type="lineal" value="100" color="yellow" backgroundcolor="light" style="transform: rotate(0deg);"&gt;<br/>
+              &lt;div class="bc-progress-bar-lineal-container light bc-progress-container-yellow"&gt;<br/>
+               &lt;div class="bc-progress-bar-lineal-value" aria-label="progress bar cargado 100% de 100%" role="progressbar" aria-valuenow="100%" aria-valuemax="100%" aria-valuemin="0%" style="width: 100%;"&gt;&lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+             &lt;/div&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+            &lt;/bc-progress-bar&gt;&lt;!----&gt;<br/>
+            &lt;div _ngcontent-ng-c2196033138="" class="botones"&gt;<br/>
+             &lt;div _ngcontent-ng-c2196033138="" class="boton1"&gt;<br/>
+              &lt;button _ngcontent-ng-c2196033138="" bc-button="" typebutton="primary" sizebutton="small" class="btn-primary-modal bc-button-fill bc-button-primary bc-button-small"&gt; ¡SIGO AQU�?! &lt;/button&gt;<br/>
+             &lt;/div&gt;&lt;!----&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/section&gt;<br/>
+       &lt;section class="bc-modal-button-container"&gt;<br/>
+        &lt;button bc-button="" sizebutton="small" class="bc-button-fill bc-button-primary bc-button-small" aria-pressed="false"&gt;&lt;/button&gt;&lt;!----&gt;<br/>
+       &lt;/section&gt;<br/>
+       &lt;section class="bc-modal-footer"&gt;&lt;/section&gt;<br/>
+      &lt;/section&gt;<br/>
+     &lt;/article&gt;<br/>
+    &lt;/bc-modal&gt;<br/>
+   &lt;/app-moda-esp&gt;<br/>
+   &lt;app-modal _nghost-ng-c3428052066=""&gt;<br/>
+    &lt;!----&gt;<br/>
+    &lt;bc-modal _ngcontent-ng-c3428052066="" typenotify=""&gt;<br/>
+     &lt;article role="dialog" aria-labelledby="id" aria-modal="true" class="bc-modal" id="M.1280295951" outerclosetap="false"&gt;<br/>
+      &lt;label for="" class="bc-modal-close"&gt;&lt;/label&gt;<br/>
+      &lt;section class="bc-modal-container" customwidth="small" titlealign="center" buttonalignment="vertical" subtitle="false" typeicon="false" iscancellable="false" displaybutton="false" role="alertdialog" aria-modal="true" aria-label="false"&gt;<br/>
+       &lt;section class="bc-modal-close-button-container"&gt;<br/>
+        &lt;div&gt;<br/>
+         &lt;!----&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/section&gt;&lt;!----&gt;<br/>
+       &lt;section class="bc-modal-icon-container"&gt;<br/>
+        &lt;div&gt;<br/>
+         &lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/section&gt;&lt;!----&gt;<br/>
+       &lt;section class="bc-modal-title bc-direction-row bc-margin-top-2 bc-margin-bottom-2" aria-labelledby="M.1280295951"&gt;<br/>
+        &lt;h4 id="M.1280295951" class="modal-title-label"&gt;&lt;/h4&gt;<br/>
+       &lt;/section&gt;<br/>
+       &lt;section class="bc-modal-title bc-direction-row"&gt;<br/>
+        &lt;p&gt;&lt;/p&gt;<br/>
+       &lt;/section&gt;<br/>
+       &lt;section class="bc-modal-content" aria-describedby="elemento Descripcion"&gt;<br/>
+        &lt;div _ngcontent-ng-c3428052066="" modalcontent=""&gt;<br/>
+         &lt;div _ngcontent-ng-c3428052066=""&gt;<br/>
+          &lt;div _ngcontent-ng-c3428052066="" class="contImTil"&gt;<br/>
+           &lt;div _ngcontent-ng-c3428052066=""&gt;<br/>
+            &lt;bc-icon _ngcontent-ng-c3428052066="" role="img" aria-hidden="true" class="bc-sm bc-icon" style="width: 100px;"&gt;<br/>
+             &lt;img src="https://library-sdb.apps.bancolombia.com/bds/6.54.4/assets/icons/pictograms/mano_5.svg" style="width: 100px;"&gt;<br/>
+            &lt;/bc-icon&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c3428052066=""&gt;<br/>
+            &lt;h4 _ngcontent-ng-c3428052066=""&gt;¡Espera!&lt;/h4&gt;<br/>
+            &lt;p _ngcontent-ng-c3428052066="" class="p1" style="display: inline;"&gt;Has abierto otra sesión, esta se cerrará y podrás continuar con la otra.&lt;/p&gt;<br/>
+            &lt;p _ngcontent-ng-c3428052066="" class="p1"&gt;&lt;/p&gt;<br/>
+            &lt;p _ngcontent-ng-c3428052066="" class="p1"&gt;&lt;/p&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+            &lt;div _ngcontent-ng-c3428052066="" class="botones"&gt;<br/>
+             &lt;div _ngcontent-ng-c3428052066="" class="boton1"&gt;<br/>
+              &lt;button _ngcontent-ng-c3428052066="" bc-button="" typebutton="primary" sizebutton="small" class="btn-primary-modal bc-button-fill bc-button-primary bc-button-small"&gt; SALIR &lt;/button&gt;<br/>
+             &lt;/div&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/section&gt;<br/>
+       &lt;section class="bc-modal-button-container"&gt;<br/>
+        &lt;button bc-button="" sizebutton="small" class="bc-button-fill bc-button-primary bc-button-small" aria-pressed="false"&gt;&lt;/button&gt;&lt;!----&gt;<br/>
+       &lt;/section&gt;<br/>
+       &lt;section class="bc-modal-footer"&gt;&lt;/section&gt;<br/>
+      &lt;/section&gt;<br/>
+     &lt;/article&gt;<br/>
+    &lt;/bc-modal&gt;<br/>
+   &lt;/app-modal&gt;<br/>
+  &lt;/app-root&gt;<br/>
+  &lt;script type="text/javascript" src="https://resources.digital-cloud-west.medallia.com/wdcwest/4434/onsite/embed.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="runtime.c2c08a7f49186de7.js" type="module"&gt;&lt;/script&gt;<br/>
+  &lt;script src="polyfills.07a39fa9647cc597.js" type="module"&gt;&lt;/script&gt;<br/>
+  &lt;script src="scripts.f0bc6f00bd664da3.js" defer&gt;&lt;/script&gt;<br/>
+  &lt;script src="main.d22897bd9e34d2ea.js" type="module"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" async src="https://resources.digital-cloud-west.medallia.com/wdcwest/4434/onsite/generic1715182151395.js" charset="UTF-8"&gt;&lt;/script&gt;<br/>
+  &lt;style title="MDigital_animationStyle"&gt;&lt;/style&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
