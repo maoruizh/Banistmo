@@ -20,7 +20,15 @@ public class ModelData {
     protected String numeroObligacion;
     protected String diasMora;
     protected String saldoMora;
-    protected String boton;
+    protected String cuotasPagadas;
+    protected String cuotasVencidas;
+    protected String diasEnMora;
+    protected String teQuedanPorPagar;
+    protected String inicioMora;
+    protected String estasAca;
+    protected String mensajeSalir;
+    protected String estado;
+
 
     public static ModelData configModel(Map<String, String> row) {
         return new ModelData(
@@ -31,7 +39,14 @@ public class ModelData {
                 row.get("numeroObligacion"),
                 row.get("diasMora"),
                 row.get("saldoMora"),
-                row.get("boton")
+                row.get("cuotasPagadas"),
+                row.get("cuotasVencidas"),
+                row.get("diasEnMora"),
+                row.get("teQuedanPorPagar"),
+                row.get("inicioMora"),
+                row.get("estasAca"),
+                row.get("mensajeSalir"),
+                row.get("estado")
         );
     }
 }
