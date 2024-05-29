@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/creditos_en_mora.feature",
         glue = {"co.com.bancolombia.certification.mantenimiento.stepdefinitions", "co.com.bancolombia.certification.mantenimiento.setup"},
-        //tags = "@3",
+//        tags = "@Scenario4",
         monochrome = true,
         snippets = CucumberOptions.SnippetType.CAMELCASE
 

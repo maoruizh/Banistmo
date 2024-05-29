@@ -27,13 +27,10 @@ repositories {
     mavenLocal()
 }
 
-
 ext {
     serenityCoreVersion = '4.0.12'
     lombokVersion = '1.18.22'
-
 }
-
 
 dependencies {
 
@@ -50,13 +47,7 @@ dependencies {
     implementation "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}"
     implementation "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}"
     implementation 'org.json:json:20230618'
-    //implementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
-
-    testImplementation 'org.assertj:assertj-core:3.23.1'
-    testImplementation 'org.hamcrest:hamcrest-core:2.2'
-
     implementation group: 'jline', name: 'jline', version: '2.14.6'
-    testImplementation "junit:junit:4.13.2"
 
     implementation ('org.apache.camel:camel-spring-boot-starter:2.25.4'){
         exclude group: 'org.apache.logging.log4j', module: 'log4j-core'
@@ -64,15 +55,18 @@ dependencies {
         exclude group: 'org.apache.logging.log4j', module: 'log4j-to-slf4j'
         exclude group: 'org.slf4j', module: 'log4j-over-slf4j'
     }
+
     implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.7'
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.20.0'
     implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.20.0'
 
-    //Lombok dependencies
+    testImplementation 'org.assertj:assertj-core:3.23.1'
+    testImplementation 'org.hamcrest:hamcrest-core:2.2'
+    testImplementation "junit:junit:4.13.2"
+
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
     testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
 }
-
 
 gradle.startParameter.continueOnFailure = true

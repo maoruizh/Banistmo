@@ -6,18 +6,18 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
-import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static co.com.bancolombia.certification.mantenimiento.userinterfaces.CreditosEnMora.*;
+import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class CreditosEnMora implements Task {
+public class LoginUser implements Task {
     private ModelData modelData;
 
-    public CreditosEnMora(ModelData modelData) {
+    public LoginUser(ModelData modelData) {
         this.modelData = modelData;
     }
 
-    public static CreditosEnMora withTheData(ModelData modelDataList) {
-        return instrumented(CreditosEnMora.class, modelDataList);
+    public static LoginUser loginUser(ModelData modelDataList) {
+        return instrumented(LoginUser.class, modelDataList);
     }
 
     @Override

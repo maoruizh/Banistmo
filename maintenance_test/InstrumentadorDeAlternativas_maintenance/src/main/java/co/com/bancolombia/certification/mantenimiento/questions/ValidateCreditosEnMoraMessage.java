@@ -8,10 +8,10 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 import static co.com.bancolombia.certification.mantenimiento.userinterfaces.CreditosEnMora.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
-public class CreditosEnMora implements Question<Boolean> {
+public class ValidateCreditosEnMoraMessage implements Question<Boolean> {
     private ModelData modelData;
 
-    public CreditosEnMora(ModelData modelData) {
+    public ValidateCreditosEnMoraMessage(ModelData modelData) {
         this.modelData = modelData;
     }
 
@@ -23,13 +23,13 @@ public class CreditosEnMora implements Question<Boolean> {
         return (TXT_SUBTITLE_NEW_PAYMENT_OPTION.resolveFor(actor).getText().equals(modelData.getSubtituloListadoCreditos())
                 && TXT_OBLIGATION_TYPE.resolveFor(actor).getText().equals(modelData.getTipoObligacion())
                 && TXT_OBLIGATION_NUMBER.resolveFor(actor).getText().equals(modelData.getNumeroObligacion())
-                && TXT_DAYS_IN_ARREARS.resolveFor(actor).getText().equals(modelData.getDiasMora())
-                && TXT_BALANCE_IN_ARREARS.resolveFor(actor).getText().equals(modelData.getSaldoMora()));
-//                && BTN_CHANGE.resolveFor(actor).getText().equals(modelData.getBoton())
-//                && BTN_ARROW.isVisibleFor(actor));
+                && TXT_DAYS_ARREARS.resolveFor(actor).getText().equals(modelData.getDiasMora())
+                && TXT_BALANCE_IN_ARREARS.resolveFor(actor).getText().equals(modelData.getSaldoMora())
+                && BTN_CHANGE.isVisibleFor(actor)
+                && BTN_ARROW.isVisibleFor(actor));
     }
 
-    public static CreditosEnMora message(ModelData modelData) {
-        return new CreditosEnMora(modelData);
+    public static ValidateCreditosEnMoraMessage validateCreditosEnMoraMessage(ModelData modelData) {
+        return new ValidateCreditosEnMoraMessage(modelData);
     }
 }

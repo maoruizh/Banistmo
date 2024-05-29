@@ -10,9 +10,9 @@ public class CreditosEnMora {
     public static final Target TXT_SUBTITLE_NEW_PAYMENT_OPTION = Target.the("subtitulo nueva opcion pago").located(By.id("subtitulo-nueva-opcion-pago"));
     public static final Target TXT_OBLIGATION_TYPE = Target.the("Tipo de obligacion").located(By.id("credito-libre-inversion"));
     public static final Target TXT_OBLIGATION_NUMBER = Target.the("numero radicado").located(By.id("numero-radicado"));
-    public static final Target TXT_DAYS_IN_ARREARS = Target.the("dias en mora").located(By.id("dias-mora"));
+    public static final Target TXT_DAYS_ARREARS = Target.the("dias en mora").located(By.id("dias-mora"));
     public static final Target TXT_BALANCE_IN_ARREARS = Target.the("saldo en mora").located(By.id("valor-saldo"));
     public static final Target BTN_CHANGE = Target.the("Boton cambiar").located(By.id("boton-cambiar-condiciones"));
-    public static final Target BTN_ARROW = Target.the("Boton flecha detalle").located(By.id("(icono-doble-down"));
-
+    public static final Target BTN_ARROW = Target.the("Boton flecha abajo").located(By.id("icono-doble-down"));
+    public static final Target BTN_ANOTHER_TIME = Target.the("Boton en otro momento").located(By.id("boton-otro-momento"));
 }
