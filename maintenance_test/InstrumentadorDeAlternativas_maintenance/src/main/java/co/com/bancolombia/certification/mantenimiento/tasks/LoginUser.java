@@ -1,6 +1,7 @@
 package co.com.bancolombia.certification.mantenimiento.tasks;
 
 import co.com.bancolombia.certification.mantenimiento.models.ModelData;
+import net.serenitybdd.markers.IsSilent;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -9,7 +10,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 import static co.com.bancolombia.certification.mantenimiento.userinterfaces.CreditosEnMora.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class LoginUser implements Task {
+public class LoginUser implements Task, IsSilent {
     private ModelData modelData;
 
     public LoginUser(ModelData modelData) {
