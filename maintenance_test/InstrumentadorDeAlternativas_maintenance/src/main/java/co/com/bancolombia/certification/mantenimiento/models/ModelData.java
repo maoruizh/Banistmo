@@ -28,6 +28,10 @@ public class ModelData {
     protected String estasAca;
     protected String mensajeSalir;
     protected String estado;
+    protected String fechaVencimiento;
+    protected String tipoObligacionYNumero;
+    protected String nuevaFechaPago;
+    protected String nuevaCuotaMensual;
 
 
     public static ModelData configModel(Map<String, String> row) {
@@ -46,7 +50,11 @@ public class ModelData {
                 row.get("inicioMora"),
                 row.get("estasAca"),
                 row.get("mensajeSalir"),
-                row.get("estado")
+                row.get("estado"),
+                row.get("fechaVencimiento"),
+                row.get("tipoObligacionYNumero"),
+                row.get("nuevaFechaPago"),
+                row.get("nuevaCuotaMensual")
         );
     }
 }

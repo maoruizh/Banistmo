@@ -8,10 +8,10 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 import static co.com.bancolombia.certification.mantenimiento.userinterfaces.CreditosEnMora.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
-public class ValidateCreditosEnMoraMessage implements Question<Boolean> {
+public class MensajeCreditosEnMora implements Question<Boolean> {
     private ModelData modelData;
 
-    public ValidateCreditosEnMoraMessage(ModelData modelData) {
+    public MensajeCreditosEnMora(ModelData modelData) {
         this.modelData = modelData;
     }
 
@@ -29,7 +29,7 @@ public class ValidateCreditosEnMoraMessage implements Question<Boolean> {
                 && BTN_ARROW.isVisibleFor(actor));
     }
 
-    public static ValidateCreditosEnMoraMessage validateCreditosEnMoraMessage(ModelData modelData) {
-        return new ValidateCreditosEnMoraMessage(modelData);
+    public static MensajeCreditosEnMora mensajeCreditosEnMora(ModelData modelData) {
+        return new MensajeCreditosEnMora(modelData);
     }
 }
