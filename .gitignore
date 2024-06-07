@@ -21,9 +21,14 @@
 
 
 # Serenity-BDD
+*target/
+/target/
 */target/
 
-
+# History
+*history/
+/history/
+*/history/
 
 # Intellij
 .idea/
