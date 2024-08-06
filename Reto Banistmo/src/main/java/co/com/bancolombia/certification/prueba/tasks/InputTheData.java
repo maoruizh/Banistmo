@@ -19,7 +19,7 @@ public class InputTheData implements Task {
                 Click.on(Bancolombia.TXT_INGRSE_TASA_INTERES).afterWaitingUntilEnabled(),
                 Enter.theValue("10").into(Bancolombia.TXT_INGRSE_TASA_INTERES),
                 Click.on(Bancolombia.BTN_PERIODICIDAD_MENSUAL).afterWaitingUntilEnabled(),
-                Click.on(Bancolombia.BTN_CAPITALIZACION).afterWaitingUntilEnabled()
+                Click.on(Bancolombia.BTN_CAPITALIZACION_MENSUAL).afterWaitingUntilEnabled()
                 );
     }
 }

@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
         @CucumberOptions(
         features = "src/test/resources/features/Bancolombia.feature",
         glue = {"co.com.bancolombia.certification.mantenimiento.stepdefinitions", "co.com.bancolombia.certification.mantenimiento.setup"},
-//        tags = "@Scenario4",
+//        tags = "@Scenario2",
         monochrome = true,
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )

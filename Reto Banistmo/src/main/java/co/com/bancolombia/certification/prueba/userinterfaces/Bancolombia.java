@@ -14,6 +14,6 @@ public class Bancolombia {
     public static final Target BTN_DE_TASANOMINAL_A_TASAEFECTIVA = Target.the("Boton de tasa nominal a tasa efectiva").located(By.id("btntoolUno"));
     public static final Target TXT_INGRSE_TASA_INTERES = Target.the("Texto ingresar tasa de interes").located(By.xpath("//*[@id=\"interes\"]"));
     public static final Target BTN_PERIODICIDAD_MENSUAL = Target.the("Boton periodicidad deseada mensual").located(By.xpath("//*[@id=\"periodicidad-deseada\"]/option[7]"));
-    public static final Target BTN_CAPITALIZACION = Target.the("Boton ingresa la capitalizacion mensual").located(By.xpath("//*[@id=\"capitalizacion\"]/option[7]"));
+    public static final Target BTN_CAPITALIZACION_MENSUAL = Target.the("Boton ingresa la capitalizacion mensual").located(By.xpath("//*[@id=\"capitalizacion\"]/option[7]"));
     public static final Target TXT_RESULTADO_TASA = Target.the("Texto del resultadod e la tasa").located(By.xpath("//*[@id=\"respuesta\"]"));
 }
