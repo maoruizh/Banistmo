@@ -1,9 +1,9 @@
-package co.com.bancolombia.certification.mantenimiento.questions;
+package co.com.bancolombia.certification.prueba.questions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-import static co.com.bancolombia.certification.mantenimiento.userinterfaces.Bancolombia.TXT_RESULTADO_TASA;
+import static co.com.bancolombia.certification.prueba.userinterfaces.Bancolombia.TXT_RESULTADO_TASA;
 
 public class CalculationResult implements Question<Boolean> {
 

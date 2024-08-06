@@ -1,4 +1,4 @@
-package co.com.bancolombia.certification.mantenimiento.userinterfaces;
+package co.com.bancolombia.certification.prueba.userinterfaces;
 
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;

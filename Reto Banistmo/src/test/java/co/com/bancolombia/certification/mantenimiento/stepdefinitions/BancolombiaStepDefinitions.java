@@ -6,15 +6,15 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.actions.Open;
 
-import static co.com.bancolombia.certification.mantenimiento.questions.CalculationResult.calculationResult;
-import static co.com.bancolombia.certification.mantenimiento.tasks.ClickConvertidorTasasInteresTasks.clickConvertidorTasasInteres;
-import static co.com.bancolombia.certification.mantenimiento.tasks.ClickGestionarFinanzasTasks.clickGestionarFinanzas;
-import static co.com.bancolombia.certification.mantenimiento.tasks.ClickHerramientasTasks.clickHerramientas;
-import static co.com.bancolombia.certification.mantenimiento.tasks.ClickNegociosTasks.clickNegocios;
-import static co.com.bancolombia.certification.mantenimiento.tasks.ClickSolucionesNoFinancierasTasks.clickSolucionesNoFinancierasTasks;
-import static co.com.bancolombia.certification.mantenimiento.tasks.ClickTasaNominalAEfectivaTasks.clickTasaNominalAEfectiva;
-import static co.com.bancolombia.certification.mantenimiento.tasks.InputTheData.inputTheData;
-import static co.com.bancolombia.certification.mantenimiento.utils.Constants.URL;
+import static co.com.bancolombia.certification.prueba.questions.CalculationResult.calculationResult;
+import static co.com.bancolombia.certification.prueba.tasks.ClickConvertidorTasasInteresTasks.clickConvertidorTasasInteres;
+import static co.com.bancolombia.certification.prueba.tasks.ClickGestionarFinanzasTasks.clickGestionarFinanzas;
+import static co.com.bancolombia.certification.prueba.tasks.ClickHerramientasTasks.clickHerramientas;
+import static co.com.bancolombia.certification.prueba.tasks.ClickNegociosTasks.clickNegocios;
+import static co.com.bancolombia.certification.prueba.tasks.ClickSolucionesNoFinancierasTasks.clickSolucionesNoFinancierasTasks;
+import static co.com.bancolombia.certification.prueba.tasks.ClickTasaNominalAEfectivaTasks.clickTasaNominalAEfectiva;
+import static co.com.bancolombia.certification.prueba.tasks.InputTheData.inputTheData;
+import static co.com.bancolombia.certification.prueba.utils.Constants.URL;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 

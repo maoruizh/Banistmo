@@ -1,11 +1,11 @@
-package co.com.bancolombia.certification.mantenimiento.tasks;
+package co.com.bancolombia.certification.prueba.tasks;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
-import static co.com.bancolombia.certification.mantenimiento.userinterfaces.Bancolombia.BTN_NEGOCIOS;
+import static co.com.bancolombia.certification.prueba.userinterfaces.Bancolombia.BTN_NEGOCIOS;
 public class ClickNegociosTasks implements Task {
 
     public static ClickNegociosTasks clickNegocios() {

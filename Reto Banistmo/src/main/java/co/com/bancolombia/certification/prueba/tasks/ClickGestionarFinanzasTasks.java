@@ -1,11 +1,11 @@
-package co.com.bancolombia.certification.mantenimiento.tasks;
+package co.com.bancolombia.certification.prueba.tasks;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
-import static co.com.bancolombia.certification.mantenimiento.userinterfaces.Bancolombia.BTN_GESTIONAR_FINANZAS;
+import static co.com.bancolombia.certification.prueba.userinterfaces.Bancolombia.BTN_GESTIONAR_FINANZAS;
 public class ClickGestionarFinanzasTasks implements Task {
     public static ClickGestionarFinanzasTasks clickGestionarFinanzas() {
         return Tasks.instrumented(ClickGestionarFinanzasTasks.class);

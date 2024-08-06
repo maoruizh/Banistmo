@@ -1,4 +1,4 @@
-package co.com.bancolombia.certification.mantenimiento.utils;
+package co.com.bancolombia.certification.prueba.utils;
 
 public enum Constants {
     ACTOR_PAGE("jomruiz@bancolombia.com"),
