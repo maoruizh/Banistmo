@@ -15,6 +15,6 @@ public class ClickNegociosTasks implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(BTN_NEGOCIOS));
+                Click.on(BTN_NEGOCIOS).afterWaitingUntilEnabled());
     }
 }

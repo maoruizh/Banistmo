@@ -16,10 +16,10 @@ public class InputTheData implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(Bancolombia.TXT_INGRSE_TASA_INTERES),
+                Click.on(Bancolombia.TXT_INGRSE_TASA_INTERES).afterWaitingUntilEnabled(),
                 Enter.theValue("10").into(Bancolombia.TXT_INGRSE_TASA_INTERES),
-                Click.on(Bancolombia.BTN_PERIODICIDAD_MENSUAL),
-                Click.on(Bancolombia.BTN_CAPITALIZACION)
+                Click.on(Bancolombia.BTN_PERIODICIDAD_MENSUAL).afterWaitingUntilEnabled(),
+                Click.on(Bancolombia.BTN_CAPITALIZACION).afterWaitingUntilEnabled()
                 );
     }
 }

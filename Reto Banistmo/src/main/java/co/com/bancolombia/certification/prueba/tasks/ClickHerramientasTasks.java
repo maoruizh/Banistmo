@@ -17,9 +17,9 @@ public class ClickHerramientasTasks implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(BTN_HERRAMIENTAS));
+        actor.attemptsTo(Click.on(BTN_HERRAMIENTAS).afterWaitingUntilEnabled());
         actor.attemptsTo(Scroll.to(BTN_FLECHA_DERECHA));
-        actor.attemptsTo(Click.on(BTN_FLECHA_DERECHA));
+        actor.attemptsTo(Click.on(BTN_FLECHA_DERECHA).afterWaitingUntilEnabled());
     }
 }
 
