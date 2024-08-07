@@ -1,5 +1,6 @@
 package co.com.bancolombia.certification.mantenimiento.stepdefinitions;
 
+import co.com.bancolombia.certification.prueba.interactions.Wait;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -38,30 +39,38 @@ public class BancolombiaStepDefinitions {
     @And("Select button Herramientas")
     public void SelectHerramientasButton() {
         theActorInTheSpotlight().attemptsTo(clickHerramientas());
+        theActorInTheSpotlight().attemptsTo(Wait.seconds(300));
     }
 
     @And("Select Gestionar las finanzas de mi negocio")
     public void SelectGestionarLasFinanzasDeMiNegocioButton(){
         theActorInTheSpotlight().attemptsTo(clickGestionarFinanzas());
+        theActorInTheSpotlight().attemptsTo(Wait.seconds(300));
     }
 
     @And("Select Convertidor de tasas de interes tool")
     public void SelectConvertidorTasasInteresButton(){
         theActorInTheSpotlight().attemptsTo(clickConvertidorTasasInteres());
+        theActorInTheSpotlight().attemptsTo(Wait.seconds(300));
+
     }
 
     @And("Select De tasa nominal a tasa efectiva")
     public void SelectDeTasaNominalAEfectivaButton() {
         theActorInTheSpotlight().attemptsTo(clickTasaNominalAEfectiva());
+        theActorInTheSpotlight().attemptsTo(Wait.seconds(300));
+
     }
 
     @When("Input data to calculate the tasa nominal a tasa efectiva")
     public void InputDataToCalculateTheTasaNominalATasaEfectiva() {
         theActorInTheSpotlight().attemptsTo(inputTheData());
+        theActorInTheSpotlight().attemptsTo(Wait.seconds(300));
     }
 
     @Then("Validate the calculation result")
     public void ValidateTheCalculationResult() {
         theActorInTheSpotlight().should(seeThat(calculationResult()));
+        theActorInTheSpotlight().attemptsTo(Wait.seconds(300));
     }
 }
