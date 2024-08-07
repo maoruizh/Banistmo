@@ -1,7 +1,7 @@
 buildscript {
     repositories {
         maven {
-            url "https://artifactory.apps.bancolombia.com/maven-bancolombia/"
+            url "https://plugins.gradle.org/m2/"
         }
         mavenLocal()
         mavenCentral()
@@ -20,9 +20,10 @@ sourceCompatibility = 11
 
 repositories {
     maven {
-        url "https://artifactory.apps.bancolombia.com/maven-bancolombia/"
+        url "https://plugins.gradle.org/m2/"
     }
     mavenLocal()
+    mavenCentral()
 }
 
 ext {
@@ -33,8 +34,8 @@ ext {
 dependencies {
 
     implementation 'com.codoid.products:fillo:1.21'
-    implementation  'com.hynnet:jacob:1.18'
-    implementation  'net.sf.jt400:jt400-full:6.0'
+    implementation 'com.hynnet:jacob:1.18'
+    implementation 'net.sf.jt400:jt400-full:6.0'
     implementation 'org.jvnet.com4j:com4j:2.1'
     implementation 'org.slf4j:slf4j-simple:2.0.5'
 
